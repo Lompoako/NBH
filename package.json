@@ -1,15 +1,12 @@
 {
   "name": "nbh",
-  "version": "0.1.0",
-  "description": "New Born of Hope",
+  "version": "1.1.0",
+  "description": "New Block Hash",
   "author": "Leandro Saley",
-  "homepage": "http://.",
-  "main": "run-arbitrage.js",
+  "homepage": "http://localhost/",
   "dependencies": {
     "@openzeppelin/contracts": "3.3.0",
-    "@studydefi/money-legos": "^2.3.3",
     "@truffle/hdwallet-provider": "1.1.0",
-    "@uniswap/sdk": "^2.0.5",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-es2015": "6.24.1",
@@ -21,14 +18,27 @@
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
     "dotenv": "8.2.0",
-    "php": "^1.0.2",
-    "react": "16.13.1",
+    "react": "^17.0.2",
     "react-bootstrap": "1.3.0",
-    "react-dom": "16.13.1",
-    "react-scripts": "3.4.3",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
     "truffle": "5.1.63",
-    "truffle-hdwallet-provider-privkey": "0.3.0",
-    "web3": "^1.2.6"
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.29",
+    "@material-ui/icons": "^4.11.2",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.4",
+    "firebase": "^9.1.0",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.2.0",
+    "recharts": "^2.0.9",
+    "redux-persist": "^6.0.0",
+    "timeago.js": "^4.0.2",
+    "web-vitals": "^1.0.1",
+    "web3": "1.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,7 +47,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": [
     ">0.2%",
@@ -45,6 +58,18 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "production": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ],
+  "main": "run-arbitrage.js",
   "directories": {
     "test": "test"
   },
@@ -53,11 +78,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lompoako/NBH.git"
+    "url": "git+https://github.com/Lompoako/dbank.git"
   },
-  "keywords": [],
+  "keywords": [
+    "*",
+    "binance",
+    "ether",
+    "fallback",
+    "userBalance",
+    "depositTime",
+    "interest",
+    "receive",
+    "search"
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lompoako/NBH.git"
+    "url": "https://github.com/Lompoako/dbank/issues"
   }
 }

@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
 require("dotenv").config()
 const Web3 = require('web3');
 const { ChainId, Token, TokenAmount, Pair } = require('@uniswap/sdk');
 const abis = require('./abis');
+const mainnet = require('truffle-config.js');
 const { mainnet: addresses } = require('./addresses');
 const Flashloan = require('./build/contracts/Flashloan.json');
+
 
 const web3 = new Web3(
   new Web3.providers.WebsocketProvider(process.env.INFURA_URL)
